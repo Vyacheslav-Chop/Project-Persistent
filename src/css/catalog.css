@@ -1,0 +1,100 @@
+.gallery-header {
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-header {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    row-gap: 32px;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .gallery-list {
+    row-gap: 32px;
+    column-gap: 23px;
+  }
+}
+.gallery-item {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  padding: 24px 28px;
+  background-color: #f3f3f3;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 16px) / 2);
+    padding: 24px 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery-item {
+    width: calc((100% - 32px) / 3);
+  }
+}
+
+.gallery-watch-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-watch-name {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+.gallery-watch-price {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+@media screen and (max-width: 767.98px) {
+  .not-show-on-mobile {
+    display: none;
+  }
+}
+
+.btn_details {
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  background-color: #3350e9;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  padding: 15px 44px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .btn_details {
+    display: none;
+  }
+}
