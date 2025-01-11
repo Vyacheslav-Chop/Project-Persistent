@@ -94,6 +94,12 @@
   width: 34px;
   height: 34px;
 }
+@media screen and (min-width: 768px) {
+  .menu-social-item {
+    width: 36px;
+    height: 36px;
+  }
+}
 .menu-social-link {
   display: flex;
   border: 1px solid rgba(251, 251, 251, 0.1);
