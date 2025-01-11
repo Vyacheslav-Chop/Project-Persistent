@@ -27,26 +27,21 @@
     flex-direction: row;
   }
 }
-.sale-thumb-photo {
+.photo-thumb {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
-  .sale-thumb-photo {
+  .photo-thumb {
     flex-direction: row;
   }
 }
-/* .sale-watch-small-photo {
-  display: flex;
-  gap: 5px;
-} */
-
-/* @media screen and (min-width: 768px) {
-  .sale-watch-small-photo {
+@media screen and (min-width: 1280px) {
+  .photo-thumb {
     flex-direction: row;
   }
-} */
+}
 
 .sale-watch-list {
   display: flex;
@@ -80,6 +75,7 @@
 }
 @media screen and (min-width: 768px) {
   .sale-watch-big-photo {
+    border-radius: 50px;
     padding: 80px 112px;
   }
 }
@@ -89,9 +85,6 @@
   }
 }
 .sale-descript-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
   border-radius: 30px;
   background-color: #3350e9;
   padding: 48px 28px;
@@ -104,13 +97,13 @@
 }
 
 .sale-watch-model {
-  max-width: 279px;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  align-self: stretch;
 }
 @media screen and (min-width: 768px) {
   .sale-watch-model {
