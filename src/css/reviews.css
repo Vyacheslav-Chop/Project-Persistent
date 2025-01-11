@@ -1,10 +1,3 @@
-/* .container-reviews {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
-
 .title-reviews {
   font-size: 32px;
   line-height: 1;
@@ -12,12 +5,6 @@
   color: #0c0c0c;
   margin-bottom: 24px;
 }
-
-/* .list-reviews {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
 .item-reviews {
   max-width: 335px;

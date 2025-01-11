@@ -4,7 +4,7 @@ Persistent
 
 # Представляє Фільм
 
-Project-group-13-Persistent
+Project-Persistent
 
 # В головних Ролях:
 
