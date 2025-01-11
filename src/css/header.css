@@ -1,6 +1,4 @@
-.header-container {
-    max-width: 375px;
-}
+
 .page-header {
     padding: 20px;
     border-bottom: 2px solid #F3F3F3;
@@ -10,27 +8,23 @@
     align-items: center;
     justify-content:space-between;
 }
-.header-nav-list {
+.header-nav, .header-icon-social-list {
    display: none;
 }
+
 .header-logo {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #0c0c0c;
 }
-.header-logo {
-    padding: 7.5px 0;
-    
-}
+ 
 .burger-btn {
-    padding: 0;
-    border: none;
     background-color: transparent;
 }
 .burger-icon {
-    display: block;
     fill: #0c0c0c;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -97,25 +91,15 @@
     width: 8px;
     height: 8px;
 }
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-nav-link.current {
-    color: #0c0c0c
-}
+
 
 .header-icon-social-list {
     display: flex;
         gap: 10px;
-        flex-direction: row;
-
-        flex-shrink: 0;
-        align-self: flex-start;
-        justify-content: flex-start;        
-      
-
+    
 }
 
-.header-icon-social-list .header-icon-link {
+.header-icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +115,8 @@
 }
 .header-icon-svg {
     fill: #0c0c0c;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .header-icon-link svg:hover,
 .header-icon-link svg:focus {
