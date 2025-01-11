@@ -1,7 +1,7 @@
-.advertisement-sectoin {
+.advertisement-container {
     background-color: #0C0C0C;
     background-image:  
-    url('../img/bg-img/bg-advertisement-mobile.webp 1x');
+    url('/img/bg-img/bg-advertisement-mobile.webp');
     
     background-repeat: no-repeat;
     background-position: center;
@@ -16,34 +16,6 @@
     padding-bottom: 60px;
 
 }
-@media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
-    .advertisement-sectoin {
-    background-image:
-    url('../img/bg-img/bg-advertisement-mobile@2x.webp 2x');
-    }
-
-}
-@media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
-    
-}
-@media screen and (min-width: 768px){
-    .advertisement-sectoin {
-        max-width: 768px;
-    }
-    
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-
-}
-
-@media screen and (min-width: 1280px) {
-
-}
-
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-
-}
 
 .advertisement-text {
     font-weight: 600;
@@ -54,6 +26,60 @@
     max-width: 279px;
     padding-bottom: 28px;
 }
+
+@media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+    .advertisement-container {
+    background-image:
+    url('/img/bg-img/bg-advertisement-mobile@2x.webp');
+    }
+
+}
+@media screen and (min-width: 768px)  {
+    .advertisement-container {
+        background-image: 
+        url('/img/bg-img/bg-advertisement-tablet.webp');
+    }
+}
+@media screen and (max-width: 1279.98px) and (min-resolution: 192dpi){
+    .advertisement-container {
+        background-image:
+        url('/img/bg-img/bg-advertisement-tablet@2x.webp');
+        min-width: 768px;
+    }
+    
+
+    .advertisement-text {
+        /* font-size: 48px; */
+        line-height: 92%;
+        max-width: 576px;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .advertisement-container {
+        background-image:
+        url('/img/bg-img/bg-advertisement-desktop.webp');
+        min-width: 1280px;  
+        /* height: 298px;     */
+    }
+
+    .advertisement-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .advertisement-text {
+        display: block;
+        max-width: 690px;
+        font-size: 48px;
+        padding: 3px 0;
+        /* max-height: 132px; */
+        
+    }
+    
+}
+
 
 .advertisement-text-part {
     color: rgba(251, 251, 251, 0.5);
