@@ -1,3 +1,9 @@
+@media screen and (max-width: 767.98px) {
+  .not-show-on-mobile {
+    display: none;
+  }
+}
+
 .gallery-header {
   font-size: 32px;
   line-height: 1;
@@ -16,23 +22,24 @@
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: center;
   gap: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .gallery-list {
+    gap: 0;
     row-gap: 32px;
     column-gap: 16px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .gallery-list {
-    row-gap: 32px;
     column-gap: 23px;
   }
 }
+
 .gallery-item {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
@@ -47,8 +54,13 @@
 }
 @media screen and (min-width: 1280px) {
   .gallery-item {
-    width: calc((100% - 32px) / 3);
+    width: calc((100% - 46px) / 3);
   }
+}
+.gallery-watch-photo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .gallery-watch-name {
@@ -58,6 +70,10 @@
   letter-spacing: -0.02em;
   color: #0c0c0c;
   margin-bottom: 8px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 768px) {
   .gallery-watch-name {
@@ -71,16 +87,11 @@
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
 }
-@media screen and (max-width: 767.98px) {
-  .not-show-on-mobile {
-    display: none;
-  }
-}
 
 .btn_details {
+  display: block;
   border-radius: 16px;
-  width: 160px;
-  height: 48px;
+
   background-color: #3350e9;
   font-weight: 500;
   font-size: 14px;
@@ -88,10 +99,9 @@
   text-align: center;
   color: #fbfbfb;
   padding: 15px 44px;
-  margin-top: 40px;
+
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .btn_details {
