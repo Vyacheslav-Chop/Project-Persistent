@@ -47,32 +47,29 @@
 }
 
 .about-text-top {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
     letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
     margin-bottom: 20px;
-}
-
-.about-text-bottom {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.28571;
     letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
-    margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-    .about-description {
+    .about-text-top {
         font-size: 16px;
         line-height: 1.25;
     }
 }
 
-@media only screen and (min-width: 1280px) {
-    .about-description {
+.about-text-bottom {
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-text-bottom {
+        font-size: 16px;
         line-height: 1.25;
     }
 }
@@ -114,5 +111,6 @@ object-fit: fill;
 @media only screen and (min-width: 1280px) {
     .about-img {
         min-width: 530px;
+        height: auto;
     }
 }
