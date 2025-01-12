@@ -28,7 +28,7 @@
 }
 .burger-btn:hover .burger-icon,
 .burger-btn:focus .burger-icon {
-  fill: #3350e9;
+  stroke: #3350e9;
 }
 
 
@@ -39,7 +39,11 @@
   .header-logo {
     font-size: 20px;
   }
+  .burger-icon {
+    width: 40px;
+    height: 40px}
 }
+
 @media screen and (min-width: 1280px) {
   .page-header {
     padding: 0;
@@ -48,6 +52,7 @@
   .burger-btn {
     display: none;
   }
+ 
   .header-icon-social-list {
     display: flex;
     gap: 24px;
@@ -104,9 +109,8 @@
   }
 
 
-
 .home:hover,
-.home:hover  {
+.home:focus  {
     .current {
         position: relative;
       }
