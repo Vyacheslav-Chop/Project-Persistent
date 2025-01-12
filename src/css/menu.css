@@ -1,6 +1,6 @@
 .menu {
   background-color: rgba(12, 12, 12, 0.92);
-  background-image: url(../img/bg-img/bg-menu-mobile.jpg);
+  background-image: url(/img/bg-img/bg-menu-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fbfbfb;
@@ -11,6 +11,9 @@
   top: 0;
   right: 0;
   height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   z-index: 999999;
   padding: 240px 39px 40px 39px;
   box-sizing: border-box;
@@ -20,24 +23,27 @@
 
 @media screen and (min-resolution: 192dpi) {
   .menu {
-    background-image: url(../img/bg-img/bg-menu-mobile@2x.jpg);
+    background-image: url(/img/bg-img/bg-menu-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .menu {
     padding: 310px 101px 50px 101px;
-    background-image: url(../img/bg-img/bg-menu-tablet.jpg);
+    background-image: url(/img/bg-img/bg-menu-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .menu {
-    background-image: url(../img/bg-img/bg-menu-tablet@2x.jpg);
+    background-image: url(/img/bg-img/bg-menu-tablet@2x.jpg);
   }
 }
 .menu.is-open {
   transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .btn-close-menu {
@@ -49,7 +55,14 @@
 }
 .btn-icon {
   stroke: #fbfbfb;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn-close-menu:hover .btn-icon,
+.btn-close-menu:focus .btn-icon {
+  opacity: 1;
+}
+
 .nav-menu-list {
   display: flex;
   flex-direction: column;
@@ -76,7 +89,7 @@
   content: '';
   background-color: #3350e9;
   border-radius: 50%;
-  width: 9px;
+  width: 8px;
   height: 8px;
   bottom: -10px;
   position: absolute;
@@ -85,26 +98,23 @@
 }
 
 .menu-social-list {
-  margin-top: auto;
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
-.menu-social-item {
-  width: 34px;
-  height: 34px;
-}
-@media screen and (min-width: 768px) {
-  .menu-social-item {
-    width: 36px;
-    height: 36px;
-  }
-}
+
 .menu-social-link {
   display: flex;
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
   padding: 8px;
+  width: 34px;
+  height: 34px;
+}
+@media screen and (min-width: 768px) {
+  .menu-social-link {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .icon-social-link {
