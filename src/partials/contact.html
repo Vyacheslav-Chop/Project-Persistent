@@ -1,0 +1,94 @@
+<section class="contact-us-section">
+  <div class="container">
+    <h2 class="contact-us-title">Contact Us</h2>
+    <div class="contact-main-wrapper">
+      <div class="contact-form-container">
+        <p class="contact-form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <div class="form-wrapper">
+            <label class="form-label"
+              ><input
+                class="contact-form-info"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Name"
+                pattern="[A-Za-z\s]{1,}"
+                required
+            /></label>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label"
+              ><input
+                class="contact-form-info"
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+            /></label>
+          </div>
+          <div class="form-wrapper">
+            <label class="form-label"
+              ><input
+                class="contact-form-info"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="+380"
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                required
+            /></label>
+          </div>
+          <div class="form-wrapper form-wrapper-comment">
+            <label class="form-label form-label-comment">
+              <textarea
+                class="contact-form-info form-user-comment"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+          </div>
+          <button class="form-submit-button contact-button-text" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+      <div class="contact-us-thumb">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /img/contact-us/watch-contact-desktop.jpg    1x,
+              /img/contact-us/watch-contact-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/contact-us/watch-contact-tablet.jpg    1x,
+              /img/contact-us/watch-contact-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/contact-us/watch-contact-mobile.jpg    1x,
+              /img/contact-us/watch-contact-mobile@2x.jpg 2x
+            "
+          />
+          <img
+            class="contact-us-image"
+            src="/img/contact-us/watch-contact-mobile.jpg"
+            alt="A premium watch."
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
