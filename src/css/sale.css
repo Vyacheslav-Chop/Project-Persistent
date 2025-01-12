@@ -12,13 +12,21 @@
     margin-bottom: 40px;
   }
 }
+/* .sale-thumb {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px;
+} */
 .sale-thumb {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-thumb {
+    /* flex-direction: row; */
     gap: 40px;
   }
 }
@@ -27,6 +35,24 @@
     flex-direction: row;
   }
 }
+
+/* @media screen and (min-width: 1280px) { */
+.sale-thumb {
+  flex-wrap: nowrap;
+}
+/* } */
+
+/* .photo-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .photo-thumb {
+    flex-wrap: nowrap;
+  }
+} */
+
 .photo-thumb {
   display: flex;
   flex-direction: column;
@@ -51,7 +77,6 @@
   .sale-watch-list {
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
   }
 }
 .sale-watch-item {
@@ -103,8 +128,8 @@
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  align-self: stretch;
 }
+
 @media screen and (min-width: 768px) {
   .sale-watch-model {
     max-width: 436px;
@@ -118,7 +143,6 @@
   }
 }
 .sale-watch-art {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -129,12 +153,17 @@
   display: flex;
   align-items: center;
   gap: 9px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .sale-cont-prices {
+    margin-bottom: 30px;
+  }
 }
 .sale-buy-btn {
-  display: block;
+  font-family: 'Gilroy', sans-serif;
   border-radius: 8px;
-  min-width: 68px;
-  height: 32px;
+  padding: 8 px 12px;
   background-color: rgba(251, 251, 251, 0.1);
   font-weight: 600;
   font-size: 16px;
@@ -150,13 +179,11 @@
 
 @media screen and (min-width: 768px) {
   .sale-buy-btn {
-    min-width: 78px;
     font-size: 20px;
     line-height: 1;
   }
 }
 .sale-regular-price {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -170,14 +197,12 @@
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
   margin-bottom: 28px;
-  margin-top: 28px;
 }
 @media screen and (min-width: 768px) {
   .sale-watch-descr {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 40px;
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -185,18 +210,20 @@
     max-width: 410px;
   }
 }
+
 .sale-feature-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: flex-start;
   align-items: center;
 }
+
 @media screen and (min-width: 768px) {
   .sale-feature-list {
     max-width: 398px;
   }
 }
+
 .sale-feature-item {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 8px;
