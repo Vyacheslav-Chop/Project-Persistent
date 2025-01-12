@@ -5,6 +5,7 @@
   color: #0c0c0c;
   margin-bottom: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .section-sale-title {
     font-size: 48px;
@@ -12,12 +13,7 @@
     margin-bottom: 40px;
   }
 }
-/* .sale-thumb {
-  display: flex;
 
-  flex-wrap: wrap;
-  gap: 20px;
-} */
 .sale-thumb {
   display: flex;
   flex-direction: column;
@@ -26,43 +22,32 @@
 
 @media screen and (min-width: 768px) {
   .sale-thumb {
-    /* flex-direction: row; */
     gap: 40px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .sale-thumb {
     flex-direction: row;
   }
 }
 
-/* @media screen and (min-width: 1280px) { */
 .sale-thumb {
   flex-wrap: nowrap;
 }
-/* } */
-
-/* .photo-thumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-@media screen and (min-width: 768px) {
-  .photo-thumb {
-    flex-wrap: nowrap;
-  }
-} */
 
 .photo-thumb {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .photo-thumb {
     flex-direction: row;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .photo-thumb {
     flex-direction: row;
@@ -73,12 +58,14 @@
   display: flex;
   gap: 5px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-watch-list {
     flex-direction: column;
     gap: 10px;
   }
 }
+
 .sale-watch-item {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
@@ -86,6 +73,7 @@
   background: #f3f3f3;
   padding: 13px 14px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-watch-item {
     padding: 16px 18px;
@@ -98,22 +86,26 @@
   background-color: #f3f3f3;
   padding: 50px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-watch-big-photo {
     border-radius: 50px;
     padding: 80px 112px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .sale-watch-big-photo {
     padding: 80px 50px;
   }
 }
+
 .sale-descript-container {
   border-radius: 30px;
   background-color: #3350e9;
   padding: 48px 28px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-descript-container {
     border-radius: 50px;
@@ -137,11 +129,13 @@
     line-height: 1.12;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .sale-watch-model {
     max-width: 389px;
   }
 }
+
 .sale-watch-art {
   font-size: 14px;
   line-height: 1.29;
@@ -149,17 +143,20 @@
   color: rgba(251, 251, 251, 0.5);
   margin-bottom: 20px;
 }
+
 .sale-cont-prices {
   display: flex;
   align-items: center;
   gap: 9px;
   margin-bottom: 28px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-cont-prices {
     margin-bottom: 30px;
   }
 }
+
 .sale-buy-btn {
   font-family: 'Gilroy', sans-serif;
   border-radius: 8px;
@@ -172,6 +169,7 @@
   color: #fbfbfb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .sale-buy-btn:hover,
 .sale-buy-btn:focus {
   background-color: #1f3cd4;
@@ -183,6 +181,7 @@
     line-height: 1;
   }
 }
+
 .sale-regular-price {
   font-size: 12px;
   line-height: 1.17;
@@ -190,6 +189,7 @@
   text-decoration: line-through;
   color: rgba(251, 251, 251, 0.5);
 }
+
 .sale-watch-descr {
   font-weight: 500;
   font-size: 14px;
@@ -198,6 +198,7 @@
   color: rgba(251, 251, 251, 0.7);
   margin-bottom: 28px;
 }
+
 @media screen and (min-width: 768px) {
   .sale-watch-descr {
     font-size: 16px;
@@ -205,6 +206,7 @@
     margin-bottom: 40px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .sale-watch-descr {
     max-width: 410px;
@@ -229,12 +231,14 @@
   border-radius: 8px;
   padding: 8px 12px;
 }
+
 .feature-subtitle {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   color: #fbfbfb;
 }
+
 @media screen and (min-width: 768px) {
   .feature-subtitle {
     font-size: 14px;
