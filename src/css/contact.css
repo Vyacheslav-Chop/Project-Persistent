@@ -50,7 +50,7 @@
 
 .form-wrapper-comment {
   height: 84px;
-  margin-bottom: 0;
+  margin-bottom: 28px;
 }
 
 .form-user-comment {
@@ -62,7 +62,6 @@
   padding: 12px 50px;
   border-radius: 16px;
   background-color: #3350e9;
-  margin-top: 28px;
   outline: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -116,6 +115,7 @@
 
   .form-wrapper-comment {
     height: 90px;
+    margin-bottom: 32px;
   }
 
   .form-user-comment {
@@ -126,7 +126,6 @@
     padding: 17px 63px;
     border-radius: 16px;
     background-color: #3350e9;
-    margin-top: 32px;
   }
 
   .contact-us-image {
