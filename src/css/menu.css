@@ -1,0 +1,128 @@
+.menu {
+  background-color: rgba(12, 12, 12, 0.92);
+  background-image: url(/img/bg-img/bg-menu-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fbfbfb;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 999999;
+  padding: 240px 39px 40px 39px;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .menu {
+    background-image: url(/img/bg-img/bg-menu-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 310px 101px 50px 101px;
+    background-image: url(/img/bg-img/bg-menu-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .menu {
+    background-image: url(/img/bg-img/bg-menu-tablet@2x.jpg);
+  }
+}
+.menu.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.btn-close-menu {
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+.btn-icon {
+  stroke: #fbfbfb;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-close-menu:hover .btn-icon,
+.btn-close-menu:focus .btn-icon {
+  opacity: 1;
+}
+
+.nav-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .nav-menu-list {
+    gap: 32px;
+  }
+}
+.nav-menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+}
+.nav-menu-link {
+  position: relative;
+  padding-bottom: 7px;
+  color: currentColor;
+}
+.nav-menu-link.current::after {
+  content: '';
+  background-color: #3350e9;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  bottom: -10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-social-link {
+  display: flex;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+}
+@media screen and (min-width: 768px) {
+  .menu-social-link {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.icon-social-link {
+  fill: #fbfbfb;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-social-link:hover .icon-social-link,
+.menu-social-link:focus .icon-social-link {
+  opacity: 1;
+}
