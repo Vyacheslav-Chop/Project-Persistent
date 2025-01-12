@@ -1,0 +1,216 @@
+.section-sale-title {
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-sale-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+}
+.sale-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .sale-thumb {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sale-thumb {
+    flex-direction: row;
+  }
+}
+.photo-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .photo-thumb {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photo-thumb {
+    flex-direction: row;
+  }
+}
+
+.sale-watch-list {
+  display: flex;
+  gap: 5px;
+}
+@media screen and (min-width: 768px) {
+  .sale-watch-list {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+.sale-watch-item {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  flex-basis: calc((100% - 15px) / 4);
+  background: #f3f3f3;
+  padding: 13px 14px;
+}
+@media screen and (min-width: 768px) {
+  .sale-watch-item {
+    padding: 16px 18px;
+  }
+}
+
+.sale-watch-big-photo {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  padding: 50px;
+}
+@media screen and (min-width: 768px) {
+  .sale-watch-big-photo {
+    border-radius: 50px;
+    padding: 80px 112px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sale-watch-big-photo {
+    padding: 80px 50px;
+  }
+}
+.sale-descript-container {
+  border-radius: 30px;
+  background-color: #3350e9;
+  padding: 48px 28px;
+}
+@media screen and (min-width: 768px) {
+  .sale-descript-container {
+    border-radius: 50px;
+    padding: 60px;
+  }
+}
+
+.sale-watch-model {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  align-self: stretch;
+}
+@media screen and (min-width: 768px) {
+  .sale-watch-model {
+    max-width: 436px;
+    font-size: 32px;
+    line-height: 1.12;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sale-watch-model {
+    max-width: 389px;
+  }
+}
+.sale-watch-art {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
+}
+.sale-cont-prices {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.sale-buy-btn {
+  display: block;
+  border-radius: 8px;
+  min-width: 68px;
+  height: 32px;
+  background-color: rgba(251, 251, 251, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sale-buy-btn:hover,
+.sale-buy-btn:focus {
+  background-color: #1f3cd4;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-buy-btn {
+    min-width: 78px;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+.sale-regular-price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
+}
+.sale-watch-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .sale-watch-descr {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sale-watch-descr {
+    max-width: 410px;
+  }
+}
+.sale-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .sale-feature-list {
+    max-width: 398px;
+  }
+}
+.sale-feature-item {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.feature-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #fbfbfb;
+}
+@media screen and (min-width: 768px) {
+  .feature-subtitle {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
