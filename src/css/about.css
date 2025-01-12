@@ -31,7 +31,6 @@
 
 
 .about-name {
-    font-weight: 600;
     font-size: 32px;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -42,18 +41,24 @@
 @media only screen and (min-width: 768px) {
     .about-name {
         font-size: 48px;
-        line-height: 0.91667;
+        line-height: 0.92;
         margin-bottom: 40px;
     }
 }
 
-.about-description {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.about-text-top {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 20px;
+}
+
+.about-text-bottom {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
     margin-bottom: 40px;
@@ -81,7 +86,7 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.29;
     text-align: center;
     color: #fbfbfb;
     border: none;
@@ -96,20 +101,14 @@
 
 .about-button:focus,
 .about-button:hover {
-    background: #1F3CD4;
+    background-color: #1F3CD4;
 }
 
 .about-img {
 border-radius: 30px;
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-}
-
-@media only screen and (min-width: 768px) {
-.about-img {
-
-    }
+width: 100%;
+height: auto;
+object-fit: fill;
 }
 
 @media only screen and (min-width: 1280px) {
