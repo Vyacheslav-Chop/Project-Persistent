@@ -70,14 +70,6 @@
     width: calc((100% - 46px) / 3);
   }
 }
-/* .gallery-item-box {
-  padding: 24px 28px;
-}
-@media screen and (min-width: 768px) {
-  .gallery-item-box {
-    padding: 24px 32px;
-  }
-} */
 
 .gallery-photo-wrapper {
   display: flex;
@@ -118,7 +110,6 @@
 .btn_details {
   display: block;
   border-radius: 16px;
-
   background-color: #3350e9;
   font-weight: 500;
   font-size: 14px;
@@ -126,7 +117,6 @@
   text-align: center;
   color: #fbfbfb;
   padding: 15px 44px;
-
   margin-left: auto;
   margin-right: auto;
 }
