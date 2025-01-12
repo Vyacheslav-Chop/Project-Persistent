@@ -3,7 +3,7 @@
     display: none;
   }
 }
-.gallery-container {
+/* .gallery-container {
   width: 375px;
 }
 @media screen and (min-width: 768px) {
@@ -16,7 +16,7 @@
   .gallery-container {
     width: 1280px;
   }
-}
+} */
 .gallery-header {
   font-size: 32px;
   line-height: 1;
@@ -58,6 +58,7 @@
   border-radius: 30px;
   padding: 24px 28px;
   background-color: #f3f3f3;
+  /* width: 335px; */
 }
 @media screen and (min-width: 768px) {
   .gallery-item {
@@ -82,6 +83,7 @@
     padding: 10px 6px;
   }
 }
+
 .gallery-watch-name {
   font-weight: 500;
   font-size: 16px;
