@@ -84,6 +84,11 @@
   line-height: 1.29;
   text-align: center;
   color: #fbfbfb;
+  opacity: 0.8;
+}
+.nav-menu-item:hover,
+.nav-menu-item:focus {
+  opacity: 1;
 }
 
 .nav-menu-link {
