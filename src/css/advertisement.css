@@ -20,7 +20,7 @@
 .advertisement-text {
     font-weight: 600;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: #FBFBFB;    
     margin-bottom: 28px;    
@@ -30,17 +30,29 @@
     color: rgba(251, 251, 251, 0.5);
 }
 
-.advertisement-button {
+.advertisement-link {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 129%;
+    text-align: center;
     color: #FBFBFB;
     border: 1px solid rgba(251, 251, 251, 0.15);
     border-radius: 16px;
-    min-width: 160px;
+    width: 160px;
     height: 48px;
-    margin: 0 auto;
-    background-color: transparent; 
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advertisement-link:hover,
+.advertisement-link:focus {
+    background-color: #FBFBFB;
+    border: none;
+    color: #0C0C0C;
 }
 
 @media screen and (min-width: 768px)  {
@@ -54,10 +66,6 @@
         font-size: 48px;
         line-height: 92%;
         margin-bottom: 32px; 
-    }
-
-    .advertisement-button {
-        margin: 0;
     }
 }
 
@@ -81,7 +89,11 @@
         margin-bottom: 0;
         max-width: 690px;        
     }
-    
+
+    .advertisement-link {
+        margin-left: auto;
+        margin-right: 0;
+    }    
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
