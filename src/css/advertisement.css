@@ -1,104 +1,98 @@
 .advertisement-inner {
-    background-color: #0C0C0C;
-    background-image:  
-    url('/img/bg-img/bg-advertisement-mobile.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;  
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 60px 20px;
+  background-color: #0c0c0c;
+  background-image: url('/img/bg-img/bg-advertisement-mobile.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 60px 20px;
 }
 
 @media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
-    .advertisement-inner {
-    background-image:
-    url('/img/bg-img/bg-advertisement-mobile@2x.webp');
-    }
+  .advertisement-inner {
+    background-image: url('/img/bg-img/bg-advertisement-mobile@2x.webp');
+  }
 }
 
 .advertisement-text {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #FBFBFB;    
-    margin-bottom: 28px;    
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 28px;
 }
 
 .advertisement-text-part {
-    color: rgba(251, 251, 251, 0.5);
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .advertisement-link {
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    text-align: center;
-    color: #FBFBFB;
-    border: 1px solid rgba(251, 251, 251, 0.15);
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advertisement-link:hover,
 .advertisement-link:focus {
-    background-color: #FBFBFB;
-    border: none;
-    color: #0C0C0C;
+  background-color: #fbfbfb;
+  border: none;
+  color: #0c0c0c;
 }
 
-@media screen and (min-width: 768px)  {
-    .advertisement-inner {
-        background-image: 
-        url('/img/bg-img/bg-advertisement-tablet.webp');
-        padding: 80px 64px;  
-    }
+@media screen and (min-width: 768px) {
+  .advertisement-inner {
+    background-image: url('/img/bg-img/bg-advertisement-tablet.webp');
+    padding: 80px 64px;
+  }
 
-    .advertisement-text {  
-        font-size: 48px;
-        line-height: 92%;
-        margin-bottom: 32px; 
-    }
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 32px;
+  }
 }
 
-@media screen and (max-width: 1279.98px) and (min-resolution: 192dpi){
-    .advertisement-inner {
-        background-image:
-        url('/img/bg-img/bg-advertisement-tablet@2x.webp');
-    }  
+@media screen and (max-width: 1279.98px) and (min-resolution: 192dpi) {
+  .advertisement-inner {
+    background-image: url('/img/bg-img/bg-advertisement-tablet@2x.webp');
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .advertisement-inner {
-        background-image:
-        url('/img/bg-img/bg-advertisement-desktop.webp');
-        display: flex;
-        padding: 83px 80px;
-        justify-content: space-between;
-    } 
+  .advertisement-inner {
+    background-image: url('/img/bg-img/bg-advertisement-desktop.webp');
+    display: flex;
+    padding: 83px 80px;
+    justify-content: space-between;
+  }
 
-    .advertisement-text {
-        margin-bottom: 0;
-        max-width: 690px;        
-    }
+  .advertisement-text {
+    margin-bottom: 0;
+    max-width: 690px;
+  }
 
-    .advertisement-link {
-        margin-left: auto;
-        margin-right: 0;
-    }    
+  .advertisement-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-    .advertisement-inner {
-        background-image:
-        url('/img/bg-img/bg-advertisement-desktop@2x.webp')
-    }
+  .advertisement-inner {
+    background-image: url('/img/bg-img/bg-advertisement-desktop@2x.webp');
+  }
 }
