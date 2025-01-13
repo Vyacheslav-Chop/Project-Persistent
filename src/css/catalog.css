@@ -46,6 +46,11 @@
   border-radius: 30px;
   padding: 24px 28px;
   background-color: #f3f3f3;
+  transition: box-shadow color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 @media screen and (min-width: 768px) {
   .gallery-item {
