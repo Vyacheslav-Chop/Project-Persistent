@@ -63,12 +63,16 @@
   border-radius: 16px;
   background-color: #3350e9;
   outline: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-submit-button:hover,
 .form-submit-button:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   background-color: #1f3cd4;
+  transform: translatex(-2px);
 }
 
 .contact-button-text {

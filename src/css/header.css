@@ -10,7 +10,6 @@
 }
 
 @media screen and (max-width: 1279.98px) {
-
   .header-nav,
   .header-icon-social-list {
     display: none;
@@ -86,8 +85,8 @@
 
   .header-nav-item:hover .header-nav-link,
   .header-nav-item:focus .header-nav-link {
-  color: #3350e9;
-}
+    color: #3350e9;
+  }
 
   .header-icon-social-list {
     display: flex;
@@ -120,22 +119,18 @@
     fill: #3350e9;
   }
 
-  /* .home:hover,
-  .home:focus {
-    .current {
-      position: relative;
-    }
+  .current {
+    position: relative;
+  }
 
-    .current::after {
-      content: '';
-      position: absolute;
-      left: 15px;
-      bottom: 20px;
-      background: #3350e9;
-      border-radius: 100%;
-      width: 8px;
-      height: 8px;
-    }
-  } */
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    background: #3350e9;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+  }
 }
-
