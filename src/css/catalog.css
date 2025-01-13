@@ -46,6 +46,11 @@
   border-radius: 30px;
   padding: 24px 28px;
   background-color: #f3f3f3;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 @media screen and (min-width: 768px) {
   .gallery-item {
@@ -101,6 +106,15 @@
   padding: 15px 44px;
   margin-left: auto;
   margin-right: auto;
+  transition: box-shadow color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn_details:hover,
+.btn_details:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  background-color: #1f3cd4;
+  transform: translateX(-2px);
 }
 @media screen and (min-width: 768px) {
   .btn_details {
