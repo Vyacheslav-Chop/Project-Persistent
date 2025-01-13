@@ -46,9 +46,9 @@
     position: relative;
 }
 
-.hero-item-img{
+/* .hero-item-img{
     position: absolute;
-}
+} */
 
 
 .hero-item-img:nth-child(1) {
