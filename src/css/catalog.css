@@ -3,19 +3,9 @@
     display: none;
   }
 }
-.gallery-container {
-  width: 375px;
-}
-@media screen and (min-width: 768px) {
-  .gallery-container {
-    width: 768px;
-  }
-}
 
 @media screen and (min-width: 1280px) {
-  .gallery-container {
-    width: 1280px;
-  }
+
 }
 .gallery-header {
   font-size: 32px;
