@@ -84,6 +84,11 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .header-nav-item:hover .header-nav-link,
+  .header-nav-item:focus .header-nav-link {
+  color: #3350e9;
+}
+
   .header-icon-social-list {
     display: flex;
     align-items: center;
@@ -133,3 +138,4 @@
     }
   } */
 }
+
