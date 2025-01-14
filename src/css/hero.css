@@ -79,6 +79,7 @@
   color: #0c0c0c;
   text-align: end;
   width: 100%;
+  transition: color 250ms ease;
 }
 
 .hero-link:hover,
