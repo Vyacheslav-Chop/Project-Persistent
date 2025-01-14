@@ -76,6 +76,7 @@
 }
 
 .about-button {
+  display: inline-block;
   border-radius: 16px;
   background: #3350e9;
   font-weight: 500;
@@ -92,8 +93,8 @@
 .about-button:focus,
 .about-button:hover {
   background-color: #1f3cd4;
-  transform: translateX(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  transform: translateX(-2px);
 }
 
 .about-img {
