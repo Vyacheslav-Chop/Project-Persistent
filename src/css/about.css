@@ -92,7 +92,7 @@
 .about-button:focus,
 .about-button:hover {
   background-color: #1f3cd4;
-  transform: translatex(-2px);
+  transform: translateX(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
