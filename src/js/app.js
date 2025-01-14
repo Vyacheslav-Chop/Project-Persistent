@@ -7,17 +7,15 @@ function smoothScroll(event) {
   if (target) {
     target.scrollIntoView({ behavior: 'smooth' });
   }
+  
+  event.currentTarget.blur();
+
+  const menu = event.currentTarget.closest('.menu');
+  if (menu && menu.classList.contains('is-open')) {
+    menu.classList.remove('is-open');
+  }
 }
 
-document.querySelectorAll('.header-nav-link').forEach(link => {
-  link.addEventListener('click', smoothScroll);
-});
-
-
-document.querySelectorAll('.footer-nav-link').forEach(link => {
-  link.addEventListener('click', smoothScroll);
-});
-
-document.querySelectorAll('.nav-menu-link').forEach(link => {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', smoothScroll);
 });
