@@ -17,3 +17,7 @@ document.querySelectorAll('.header-nav-link').forEach(link => {
 document.querySelectorAll('.footer-nav-link').forEach(link => {
   link.addEventListener('click', smoothScroll);
 });
+
+document.querySelectorAll('.nav-menu-link').forEach(link => {
+  link.addEventListener('click', smoothScroll);
+});
