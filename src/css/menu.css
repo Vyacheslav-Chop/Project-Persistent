@@ -39,6 +39,7 @@
     background-image: url(/img/bg-img/bg-menu-tablet@2x.jpg);
   }
 }
+
 .menu.is-open {
   transform: translateX(0);
   opacity: 1;
@@ -53,11 +54,13 @@
   right: 20px;
   background-color: transparent;
 }
+
 .btn-icon {
   stroke: #fbfbfb;
   opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn-close-menu:hover .btn-icon,
 .btn-close-menu:focus .btn-icon {
   opacity: 1;
@@ -68,23 +71,32 @@
   flex-direction: column;
   gap: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .nav-menu-list {
     gap: 32px;
   }
 }
+
 .nav-menu-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: #fbfbfb;
+  opacity: 0.8;
 }
+.nav-menu-item:hover,
+.nav-menu-item:focus {
+  opacity: 1;
+}
+
 .nav-menu-link {
   position: relative;
   padding-bottom: 7px;
   color: currentColor;
 }
+
 .nav-menu-link.current::after {
   content: '';
   background-color: #3350e9;
@@ -110,6 +122,7 @@
   width: 34px;
   height: 34px;
 }
+
 @media screen and (min-width: 768px) {
   .menu-social-link {
     width: 36px;
@@ -122,6 +135,7 @@
   opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .menu-social-link:hover .icon-social-link,
 .menu-social-link:focus .icon-social-link {
   opacity: 1;

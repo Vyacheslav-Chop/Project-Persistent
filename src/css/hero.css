@@ -1,43 +1,42 @@
 .section-hero {
-    padding-top: 60px;
+  padding-top: 60px;
 }
-.title-box{
-    margin-bottom: 28px;
+.title-box {
+  margin-bottom: 28px;
 }
 
 .hero-title {
-    font-size: 40px;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 20px;
 }
 
 .hero-title-part {
-    color: #3350e9;
+  color: #3350e9;
 }
 
 .hero-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
+
 .hero-reviews {
-    display: flex;
-    
+    display: flex;    
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 335px;
-    
+    max-width: 335px;    
     height: auto;
     align-items: flex-end;
 }
+
 .hero-top-box {
    margin-bottom: 28px;
-
 }
 
 .hero-list-img {
@@ -123,6 +122,7 @@
         width: auto;
         align-items: flex-end;
     }
+  
         .hero-top-box {
         margin-bottom: 40px;
         display: flex;
@@ -211,9 +211,5 @@
     .hero-item-img:nth-child(3) {
         top: 0px;
         left: 42px;
-
-        z-index: 3;
+      z-index: 3;
     }
-
-    
-}
