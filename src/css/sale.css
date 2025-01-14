@@ -72,6 +72,12 @@
   flex-basis: calc((100% - 15px) / 4);
   background: #f3f3f3;
   padding: 13px 14px;
+  transition: box-shadow 250ms ease;
+}
+
+.sale-watch-item:hover,
+.sale-watch-item:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (min-width: 768px) {
