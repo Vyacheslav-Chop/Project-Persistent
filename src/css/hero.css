@@ -1,219 +1,200 @@
 .section-hero {
-    padding-top: 60px;
+  padding-top: 60px;
 }
-.title-box{
-    margin-bottom: 28px;
+
+.title-box {
+  margin-bottom: 28px;
 }
 
 .hero-title {
-    font-size: 40px;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 20px;
 }
 
 .hero-title-part {
-    color: #3350e9;
+  color: #3350e9;
 }
 
 .hero-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .hero-reviews {
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 335px;
-    
-    height: auto;
-    align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 335px;
+  height: auto;
+  align-items: flex-end;
 }
-.hero-top-box {
-   margin-bottom: 28px;
 
+.hero-top-box {
+  margin-bottom: 28px;
 }
 
 .hero-list-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .hero-item-img {
-    position: absolute;
+  position: absolute;
 }
 
 .hero-item-img:nth-child(1) {
-    top: 0;
-    left: 0;
-    z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .hero-item-img:nth-child(2) {
-    top: 0;
-    left: 32px;
-    z-index: 2;
+  top: 0;
+  left: 32px;
+  z-index: 2;
 }
 
 .hero-item-img:nth-child(3) {
-    top: 0;
-    left: 64px;
-    z-index: 3;
+  top: 0;
+  left: 64px;
+  z-index: 3;
 }
 
 .hero-link {
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
-    text-decoration: underline;
-    color: #0c0c0c;
-    text-align: end;
-    width: 100%;
-}
-.hero-link:hover {
-    color: #3350e9;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  color: #0c0c0c;
+  text-align: end;
+  width: 100%;
 }
 
+.hero-link:hover,
+.hero-link:focus {
+  color: #3350e9;
+}
 
 @media screen and (min-width: 768px) {
-    .section-hero {
-        padding-top: 80px;
-    }
+  .section-hero {
+    padding-top: 80px;
+  }
 
-    .container-hero {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  .hero-top-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .title-box {
-        max-width: 557px;
-        margin-bottom: 0;
-            
-        
-    }
+  .title-box {
+    max-width: 557px;
+    margin-bottom: 0;
+  }
 
-    .hero-title {
-        font-size: 70px;
-        margin-bottom: 20px;
-        line-height: 0.85;
-    
-    }
+  .hero-title {
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 0.85;
+  }
 
-    .hero-text {
-        max-width: 480px;
-        font-size: 16px;
-        line-height: 1.25;
-    }
+  .hero-text {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 
-    .hero-reviews {
-        flex-direction: column;
-        margin-bottom: 0;
-        width: auto;
-        align-items: flex-end;
-    }
-        .hero-top-box {
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: space-between;
-        
-        }
+  .hero-reviews {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 136px;
+  }
 
-    .hero-list-img {
-        font-size: 70px;
-        margin-bottom: 20px;
-        max-width: 335px;
-        }
+  .hero-list-img {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
 
-    .hero-item-img:nth-child(1) {
-        top: 0;
-        left: 0;
+  .hero-item-img:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 
-        z-index: 1;
-    }
+  .hero-item-img:nth-child(2) {
+    top: 0;
+    left: 41px;
+    z-index: 2;
+  }
 
-    .hero-item-img:nth-child(2) {
-        top: 0;
-        left: 41px;
+  .hero-item-img:nth-child(3) {
+    top: 0;
+    left: 80px;
+    z-index: 3;
+  }
 
-        z-index: 2;
-    }
-
-    .hero-item-img:nth-child(3) {
-        top: 0;
-        left: 80px;
-
-        z-index: 3;
-    }
-
-    .hero-link {
-        font-size: 20px;
-        line-height: 1;
-        justify-content: space-between;
-    }
+  .hero-link {
+    font-size: 20px;
+    line-height: 1;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .section-hero {
-        padding-bottom: 80px;
-    }
+  .section-hero {
+    padding-bottom: 80px;
+  }
 
-    .container-hero{
-        justify-content: space-between;
-    }
+  .container-hero {
+    justify-content: space-between;
+  }
 
-    .hero-reviews {
-        width: 146px;
-        margin: 0;
-        
-    }
+  .hero-reviews {
+    width: 146px;
+    margin: 0;
+  }
 
-    .title-box {
-        max-width: 597px;
-        margin-bottom: 40px;
-    }
-        .hero-title {
-            font-size: 72px;
-                line-height: 0.875;
-        }
+  .title-box {
+    max-width: 597px;
+    margin-bottom: 40px;
+  }
 
-    .hero-list-img {
-        font-size: 72px;
-        line-height: 0.9;
-        max-width: 597px;
-    }
+  .hero-title {
+    font-size: 72px;
+    line-height: 0.875;
+  }
 
-    .hero-item-img:nth-child(1) {
-        top: 0px;
-        left: 0;
+  .hero-list-img {
+    font-size: 72px;
+    line-height: 0.9;
+    max-width: 597px;
+  }
 
-        z-index: 1;
-    }
+  .hero-item-img:nth-child(1) {
+    top: 0px;
+    left: 0;
+    z-index: 1;
+  }
 
-    .hero-item-img:nth-child(2) {
-        top: 0px;
-        left: 44px;
+  .hero-item-img:nth-child(2) {
+    top: 0px;
+    left: 44px;
+    z-index: 2;
+  }
 
-        z-index: 2;
-    }
-
-    .hero-item-img:nth-child(3) {
-        top: 0px;
-        left: 42px;
-
-        z-index: 3;
-    }
-
-    
+  .hero-item-img:nth-child(3) {
+    top: 0px;
+    left: 86px;
+    z-index: 3;
+  }
 }
